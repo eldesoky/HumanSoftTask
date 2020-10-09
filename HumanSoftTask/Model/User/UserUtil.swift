@@ -11,35 +11,29 @@ import Foundation
 class UserUtil {
     
     private static let UserKey = "User"
-    
-    private static func archiveUser(_ user : User) -> Data {
-        do {
-            let data = try NSKeyedArchiver.archivedData(withRootObject: user, requiringSecureCoding: false)
-            
-            return data
-        } catch {
-            fatalError("Can't encode data: \(error)")
-        }
-        
-    }
-    
+
     static func load() -> User? {
-        
-        if let unarchivedObject = UserDefaults.standard.object(forKey: UserKey) as? Data {
-            do {
-                return try NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(unarchivedObject as Data) as? User
-            } catch {
-                print(error)
-                return nil
-            }
+     
+        guard let userData = UserDefaults.standard.data(forKey: UserKey) else { return nil }
+        do {
+            return try JSONDecoder().decode(User.self, from: userData)
         }
-        return nil
+        catch {
+            print(error)
+            return nil
+        }
     }
+
     
     static func save(_ user : User?) {
-        let archivedObject = archiveUser(user!)
-        UserDefaults.standard.set(archivedObject, forKey: UserKey)
-        UserDefaults.standard.synchronize()
+        do {
+            let userData = try JSONEncoder().encode(user)
+            UserDefaults.standard.set(userData, forKey: UserKey)
+            UserDefaults.standard.synchronize()
+        }
+        catch {
+          print(error)
+        }
     }
     
     static func remove() {

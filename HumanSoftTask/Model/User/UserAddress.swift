@@ -24,6 +24,11 @@ public struct UserAddress: Codable {
         street = try container.decode(String.self, forKey: .street)
  
     }
+
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(street, forKey: .street)
+      }
 }
 
 extension UserAddress: Equatable {

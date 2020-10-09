@@ -21,6 +21,10 @@
 		BCBCF6612530570100EBB9DF /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF6602530570100EBB9DF /* Album.swift */; };
 		BCBCF663253057B600EBB9DF /* UserUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF662253057B600EBB9DF /* UserUtil.swift */; };
 		BCBCF6652530588200EBB9DF /* UserAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF6642530588200EBB9DF /* UserAddress.swift */; };
+		BCBCF6692530614500EBB9DF /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF6682530614500EBB9DF /* SplashVC.swift */; };
+		BCBCF6702530638600EBB9DF /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF66F2530638600EBB9DF /* SplashViewModel.swift */; };
+		BCBCF676253067E900EBB9DF /* UIActivityIndicatorView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF675253067E900EBB9DF /* UIActivityIndicatorView+Rx.swift */; };
+		BCBCF678253068AB00EBB9DF /* UIActivityIndicatorView+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF677253068AB00EBB9DF /* UIActivityIndicatorView+Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		BCBCF6602530570100EBB9DF /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		BCBCF662253057B600EBB9DF /* UserUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUtil.swift; sourceTree = "<group>"; };
 		BCBCF6642530588200EBB9DF /* UserAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddress.swift; sourceTree = "<group>"; };
+		BCBCF6682530614500EBB9DF /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
+		BCBCF66F2530638600EBB9DF /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		BCBCF675253067E900EBB9DF /* UIActivityIndicatorView+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+Rx.swift"; sourceTree = "<group>"; };
+		BCBCF677253068AB00EBB9DF /* UIActivityIndicatorView+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+Ex.swift"; sourceTree = "<group>"; };
 		D2B0DC37B555D34B1AC56DB5 /* Pods-HumanSoftTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanSoftTask.release.xcconfig"; path = "Target Support Files/Pods-HumanSoftTask/Pods-HumanSoftTask.release.xcconfig"; sourceTree = "<group>"; };
 		FAFA9151A9E68E165EAB65C9 /* Pods_HumanSoftTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanSoftTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +85,7 @@
 		BCBCF62A2530349800EBB9DF /* HumanSoftTask */ = {
 			isa = PBXGroup;
 			children = (
+				BCBCF674253067DD00EBB9DF /* Helpers */,
 				BCBCF64E25304BB400EBB9DF /* Networking */,
 				BCBCF6572530569300EBB9DF /* Model */,
 				BCBCF6582530569B00EBB9DF /* View */,
@@ -114,6 +123,8 @@
 		BCBCF6582530569B00EBB9DF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BCBCF6662530611500EBB9DF /* Splash */,
+				BCBCF6672530612000EBB9DF /* Home */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,7 +132,7 @@
 		BCBCF659253056A200EBB9DF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				BCBCF65C253056D300EBB9DF /* User */,
+				BCBCF65C253056D300EBB9DF /* Splash */,
 				BCBCF65D253056DB00EBB9DF /* Album */,
 			);
 			path = ViewModel;
@@ -145,11 +156,12 @@
 			path = User;
 			sourceTree = "<group>";
 		};
-		BCBCF65C253056D300EBB9DF /* User */ = {
+		BCBCF65C253056D300EBB9DF /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				BCBCF66F2530638600EBB9DF /* SplashViewModel.swift */,
 			);
-			path = User;
+			path = Splash;
 			sourceTree = "<group>";
 		};
 		BCBCF65D253056DB00EBB9DF /* Album */ = {
@@ -157,6 +169,30 @@
 			children = (
 			);
 			path = Album;
+			sourceTree = "<group>";
+		};
+		BCBCF6662530611500EBB9DF /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				BCBCF6682530614500EBB9DF /* SplashVC.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		BCBCF6672530612000EBB9DF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BCBCF674253067DD00EBB9DF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BCBCF675253067E900EBB9DF /* UIActivityIndicatorView+Rx.swift */,
+				BCBCF677253068AB00EBB9DF /* UIActivityIndicatorView+Ex.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		D8EDF0A9522DF4C51C7409C8 /* Pods */ = {
@@ -291,11 +327,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBCF676253067E900EBB9DF /* UIActivityIndicatorView+Rx.swift in Sources */,
 				BCBCF65625304EBB00EBB9DF /* ApiClient.swift in Sources */,
 				BCBCF6302530349800EBB9DF /* ViewController.swift in Sources */,
 				BCBCF62C2530349800EBB9DF /* AppDelegate.swift in Sources */,
+				BCBCF6702530638600EBB9DF /* SplashViewModel.swift in Sources */,
 				BCBCF65225304D8900EBB9DF /* ApiRouter.swift in Sources */,
+				BCBCF678253068AB00EBB9DF /* UIActivityIndicatorView+Ex.swift in Sources */,
 				BCBCF62E2530349800EBB9DF /* SceneDelegate.swift in Sources */,
+				BCBCF6692530614500EBB9DF /* SplashVC.swift in Sources */,
 				BCBCF65025304D5C00EBB9DF /* Constants.swift in Sources */,
 				BCBCF65F253056F500EBB9DF /* User.swift in Sources */,
 				BCBCF663253057B600EBB9DF /* UserUtil.swift in Sources */,

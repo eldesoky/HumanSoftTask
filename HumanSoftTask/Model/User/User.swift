@@ -55,6 +55,18 @@ public struct User: Codable {
         website = try container.decode(String.self, forKey: .website)
 
     }
+
+    public func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(id, forKey: .id)
+        try container.encode(name, forKey: .name)
+        try container.encode(username, forKey: .username)
+        try container.encode(email, forKey: .email)
+        try container.encode(address, forKey: .address)
+        try container.encode(phone, forKey: .phone)
+        try container.encode(website, forKey: .website)
+
+      }
 }
 
 extension User: Equatable {

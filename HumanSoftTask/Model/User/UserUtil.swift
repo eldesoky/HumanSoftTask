@@ -44,7 +44,6 @@ class UserUtil {
     
     static func remove() {
         UserDefaults.standard.removeObject(forKey: UserKey)
-        UserDefaults.standard.removeObject(forKey: "token")
         UserDefaults.standard.synchronize()
     }
     

@@ -11,7 +11,15 @@ import Alamofire
 import RxSwift
 
 class ApiClient {
-
+    
+    static func getUsers() -> Observable<[User]> {
+        return request(ApiRouter.getUsers)
+    }
+    
+    static func getAlbums(userId: Int) -> Observable<[Album]> {
+        return request(ApiRouter.getAlbums(userId: userId))
+    }
+    
     //MARK: - request function to get results as Observable
     private static func request<T: Codable> (_ urlConvertible: URLRequestConvertible) -> Observable<T> {
         

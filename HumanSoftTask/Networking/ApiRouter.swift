@@ -12,7 +12,7 @@ import Alamofire
 enum ApiRouter: URLRequestConvertible {
     
     //The endpoint name
-    case getUser
+    case getUsers
     case getAlbums(userId: Int)
 
     //MARK: - URLRequestConvertible
@@ -44,7 +44,7 @@ enum ApiRouter: URLRequestConvertible {
     //MARK: - HttpMethod
     private var method: HTTPMethod {
         switch self {
-        case .getUser:
+        case .getUsers:
             return .get
         case .getAlbums:
             return .get
@@ -54,7 +54,7 @@ enum ApiRouter: URLRequestConvertible {
     //MARK: - Path
     private var path: String {
         switch self {
-        case .getUser:
+        case .getUsers:
             return "users"
         case .getAlbums:
            return "albums"
@@ -64,7 +64,7 @@ enum ApiRouter: URLRequestConvertible {
     //MARK: - Parameters
     private var parameters: Parameters? {
         switch self {
-        case .getUser:
+        case .getUsers:
             return [:]
         case .getAlbums(let userId):
              return [Constants.Parameters.userId : userId]

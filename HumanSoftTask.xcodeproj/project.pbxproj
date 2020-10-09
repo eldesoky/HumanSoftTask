@@ -17,6 +17,10 @@
 		BCBCF65025304D5C00EBB9DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF64F25304D5C00EBB9DF /* Constants.swift */; };
 		BCBCF65225304D8900EBB9DF /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF65125304D8900EBB9DF /* ApiRouter.swift */; };
 		BCBCF65625304EBB00EBB9DF /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF65525304EBB00EBB9DF /* ApiClient.swift */; };
+		BCBCF65F253056F500EBB9DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF65E253056F500EBB9DF /* User.swift */; };
+		BCBCF6612530570100EBB9DF /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF6602530570100EBB9DF /* Album.swift */; };
+		BCBCF663253057B600EBB9DF /* UserUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF662253057B600EBB9DF /* UserUtil.swift */; };
+		BCBCF6652530588200EBB9DF /* UserAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF6642530588200EBB9DF /* UserAddress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		BCBCF64F25304D5C00EBB9DF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BCBCF65125304D8900EBB9DF /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		BCBCF65525304EBB00EBB9DF /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		BCBCF65E253056F500EBB9DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BCBCF6602530570100EBB9DF /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		BCBCF662253057B600EBB9DF /* UserUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUtil.swift; sourceTree = "<group>"; };
+		BCBCF6642530588200EBB9DF /* UserAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddress.swift; sourceTree = "<group>"; };
 		D2B0DC37B555D34B1AC56DB5 /* Pods-HumanSoftTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanSoftTask.release.xcconfig"; path = "Target Support Files/Pods-HumanSoftTask/Pods-HumanSoftTask.release.xcconfig"; sourceTree = "<group>"; };
 		FAFA9151A9E68E165EAB65C9 /* Pods_HumanSoftTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanSoftTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,6 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				BCBCF64E25304BB400EBB9DF /* Networking */,
+				BCBCF6572530569300EBB9DF /* Model */,
+				BCBCF6582530569B00EBB9DF /* View */,
+				BCBCF659253056A200EBB9DF /* ViewModel */,
 				BCBCF62B2530349800EBB9DF /* AppDelegate.swift */,
 				BCBCF62D2530349800EBB9DF /* SceneDelegate.swift */,
 				BCBCF62F2530349800EBB9DF /* ViewController.swift */,
@@ -89,6 +100,63 @@
 				BCBCF65525304EBB00EBB9DF /* ApiClient.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		BCBCF6572530569300EBB9DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCBCF65B253056C700EBB9DF /* User */,
+				BCBCF65A253056C100EBB9DF /* Album */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCBCF6582530569B00EBB9DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCBCF659253056A200EBB9DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BCBCF65C253056D300EBB9DF /* User */,
+				BCBCF65D253056DB00EBB9DF /* Album */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BCBCF65A253056C100EBB9DF /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				BCBCF6602530570100EBB9DF /* Album.swift */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		BCBCF65B253056C700EBB9DF /* User */ = {
+			isa = PBXGroup;
+			children = (
+				BCBCF65E253056F500EBB9DF /* User.swift */,
+				BCBCF6642530588200EBB9DF /* UserAddress.swift */,
+				BCBCF662253057B600EBB9DF /* UserUtil.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		BCBCF65C253056D300EBB9DF /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		BCBCF65D253056DB00EBB9DF /* Album */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Album;
 			sourceTree = "<group>";
 		};
 		D8EDF0A9522DF4C51C7409C8 /* Pods */ = {
@@ -229,6 +297,10 @@
 				BCBCF65225304D8900EBB9DF /* ApiRouter.swift in Sources */,
 				BCBCF62E2530349800EBB9DF /* SceneDelegate.swift in Sources */,
 				BCBCF65025304D5C00EBB9DF /* Constants.swift in Sources */,
+				BCBCF65F253056F500EBB9DF /* User.swift in Sources */,
+				BCBCF663253057B600EBB9DF /* UserUtil.swift in Sources */,
+				BCBCF6612530570100EBB9DF /* Album.swift in Sources */,
+				BCBCF6652530588200EBB9DF /* UserAddress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

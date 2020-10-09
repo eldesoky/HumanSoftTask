@@ -8,7 +8,6 @@ target 'HumanSoftTask' do
   # Pods for HumanSoftTask
 
   pod 'Alamofire'
-  pod 'RxAlamofire'
 
   pod "RxSwift"
   pod "RxCocoa"

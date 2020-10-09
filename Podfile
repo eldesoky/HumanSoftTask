@@ -11,6 +11,7 @@ target 'HumanSoftTask' do
 
   pod "RxSwift"
   pod "RxCocoa"
+  pod 'RxDataSources'
 
   pod 'Kingfisher'
 

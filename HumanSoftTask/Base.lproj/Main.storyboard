@@ -22,5 +22,30 @@
             </objects>
             <point key="canvasLocation" x="139" y="138"/>
         </scene>
+        <!--AlbumCVC-->
+        <scene sceneID="ENe-cF-g8B">
+            <objects>
+                <collectionViewController storyboardIdentifier="AlbumCVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wx3-aT-DRE" customClass="AlbumCVC" customModule="HumanSoftTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Jay-Xg-HrF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mS1-71-LkO">
+                            <size key="itemSize" width="78" height="77"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="Wx3-aT-DRE" id="RIB-pt-3eO"/>
+                            <outlet property="delegate" destination="Wx3-aT-DRE" id="2k7-ev-XeD"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="piO-6K-tx8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="-536.38392857142856"/>
+        </scene>
     </scenes>
 </document>

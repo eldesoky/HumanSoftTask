@@ -9,13 +9,13 @@
 import Foundation
 
 public struct Album: Codable {
-    public let id: String
+    public let id: Int
     public let title: String
-    public let userId: String
+    public let userId: Int
 
-    public init(id: String,
+    public init(id: Int,
                 title: String,
-                userId: String) {
+                userId: Int) {
         self.id = id
         self.title = title
         self.userId = userId

@@ -16,6 +16,7 @@ struct Constants {
     //The parameters (Queries)
     struct Parameters {
         static let userId = "userId"
+        static let albumId = "albumId"
     }
     
     //The header fields

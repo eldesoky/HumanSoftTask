@@ -20,12 +20,15 @@ class ApiClient {
         return request(ApiRouter.getAlbums(userId: userId))
     }
     
+    static func getAlbumItems(albumId: Int) -> Observable<[AlbumItem]> {
+        return request(ApiRouter.getAlbumItems(albumId: albumId))
+    }
+
     //MARK: - request function to get results as Observable
     private static func request<T: Codable> (_ urlConvertible: URLRequestConvertible) -> Observable<T> {
         
         //Create RxSwift observable
         return Observable<T>.create { observer in
-
             let request = AF
                 .request(urlConvertible)
                 .responseJSON { (response) in

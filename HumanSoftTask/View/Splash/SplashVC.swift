@@ -51,14 +51,15 @@ class SplashVC: UIViewController {
                 if !UserUtil.isActive() {
                     UserUtil.save(user)
                 }
-                self.goToHome()
+                self.goToProfile()
         }.disposed(by: disposeBag)
         
         viewModel.getUser()
     }
     
-    private func goToHome() {
-        
+    private func goToProfile() {
+        let profileCoordinator = ProfileCoordinator()
+        profileCoordinator.start()
     }
 
 }

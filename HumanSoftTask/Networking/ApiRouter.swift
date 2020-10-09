@@ -14,6 +14,7 @@ enum ApiRouter: URLRequestConvertible {
     //The endpoint name
     case getUsers
     case getAlbums(userId: Int)
+    case getAlbumItems(albumId: Int)
 
     //MARK: - URLRequestConvertible
     func asURLRequest() throws -> URLRequest {
@@ -48,6 +49,8 @@ enum ApiRouter: URLRequestConvertible {
             return .get
         case .getAlbums:
             return .get
+        case .getAlbumItems:
+            return .get
         }
     }
     
@@ -58,6 +61,8 @@ enum ApiRouter: URLRequestConvertible {
             return "users"
         case .getAlbums:
            return "albums"
+        case .getAlbumItems:
+          return "photos"
         }
     }
     
@@ -67,7 +72,9 @@ enum ApiRouter: URLRequestConvertible {
         case .getUsers:
             return [:]
         case .getAlbums(let userId):
-             return [Constants.Parameters.userId : userId]
+            return [Constants.Parameters.userId : userId]
+        case .getAlbumItems(let albumId):
+            return [Constants.Parameters.albumId : albumId]
         }
     }
 }

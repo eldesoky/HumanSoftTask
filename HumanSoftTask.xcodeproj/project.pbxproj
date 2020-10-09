@@ -35,6 +35,8 @@
 		BCBCF6932530980500EBB9DF /* AlbumItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF6922530980500EBB9DF /* AlbumItem.swift */; };
 		BCBCF69625309B0800EBB9DF /* AlbumItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF69425309B0800EBB9DF /* AlbumItemCell.swift */; };
 		BCBCF69725309B0800EBB9DF /* AlbumItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBCF69525309B0800EBB9DF /* AlbumItemCell.xib */; };
+		BCBCF69F2530AD3700EBB9DF /* PhotoPreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF69E2530AD3700EBB9DF /* PhotoPreviewVC.swift */; };
+		BCBCF6A12530ADAA00EBB9DF /* PhotoPreviewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF6A02530ADAA00EBB9DF /* PhotoPreviewCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		BCBCF6922530980500EBB9DF /* AlbumItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumItem.swift; sourceTree = "<group>"; };
 		BCBCF69425309B0800EBB9DF /* AlbumItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumItemCell.swift; sourceTree = "<group>"; };
 		BCBCF69525309B0800EBB9DF /* AlbumItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumItemCell.xib; sourceTree = "<group>"; };
+		BCBCF69E2530AD3700EBB9DF /* PhotoPreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewVC.swift; sourceTree = "<group>"; };
+		BCBCF6A02530ADAA00EBB9DF /* PhotoPreviewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPreviewCoordinator.swift; sourceTree = "<group>"; };
 		D2B0DC37B555D34B1AC56DB5 /* Pods-HumanSoftTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanSoftTask.release.xcconfig"; path = "Target Support Files/Pods-HumanSoftTask/Pods-HumanSoftTask.release.xcconfig"; sourceTree = "<group>"; };
 		FAFA9151A9E68E165EAB65C9 /* Pods_HumanSoftTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanSoftTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -227,6 +231,7 @@
 				BCBCF67E2530751D00EBB9DF /* Coordinator.swift */,
 				BCBCF6802530755100EBB9DF /* ProfileCoordinator.swift */,
 				BCBCF68E2530916100EBB9DF /* AlbumCoordinator.swift */,
+				BCBCF6A02530ADAA00EBB9DF /* PhotoPreviewCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -237,6 +242,7 @@
 				BCBCF68B25308F9600EBB9DF /* AlbumCVC.swift */,
 				BCBCF69425309B0800EBB9DF /* AlbumItemCell.swift */,
 				BCBCF69525309B0800EBB9DF /* AlbumItemCell.xib */,
+				BCBCF69E2530AD3700EBB9DF /* PhotoPreviewVC.swift */,
 			);
 			path = Album;
 			sourceTree = "<group>";
@@ -382,10 +388,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBCF6A12530ADAA00EBB9DF /* PhotoPreviewCoordinator.swift in Sources */,
 				BCBCF67F2530751D00EBB9DF /* Coordinator.swift in Sources */,
 				BCBCF676253067E900EBB9DF /* UIActivityIndicatorView+Rx.swift in Sources */,
 				BCBCF65625304EBB00EBB9DF /* ApiClient.swift in Sources */,
 				BCBCF6912530977000EBB9DF /* AlbumViewModel.swift in Sources */,
+				BCBCF69F2530AD3700EBB9DF /* PhotoPreviewVC.swift in Sources */,
 				BCBCF6302530349800EBB9DF /* ViewController.swift in Sources */,
 				BCBCF6812530755100EBB9DF /* ProfileCoordinator.swift in Sources */,
 				BCBCF62C2530349800EBB9DF /* AppDelegate.swift in Sources */,

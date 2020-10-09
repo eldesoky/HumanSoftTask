@@ -76,9 +76,7 @@ class AlbumCVC: UICollectionViewController {
                          cellIdentifier: "AlbumItemCell",
                          cellType: AlbumItemCell.self)
              ) { row, data, cell in
-                
-                let newUrl = URL(string: data.url)
-                cell.itemImage.kf.setImage(with: newUrl)
+                cell.config(data.thumbnailUrl)
          }.disposed(by: disposeBag)
         viewModel.getAlbumItems(album?.id ?? 0)
      }
@@ -88,9 +86,15 @@ class AlbumCVC: UICollectionViewController {
              .rx
              .itemSelected
              .subscribe(onNext:{ indexPath in
-//                 self.didSelectItem(indexPath)
+                let albumItem = self.viewModel.filterdAlbumItems.value[indexPath.row]
+                self.previewImage(albumItem)
              }).disposed(by: disposeBag)
      }
+    
+    func previewImage(_ albumItem:AlbumItem) {
+        let photoPreviewCoordinator = PhotoPreviewCoordinator(presenter: self.navigationController!, albumItem: albumItem)
+        photoPreviewCoordinator.start()
+    }
     
     func setupSearch() {
         self.searchController = UISearchController(searchResultsController:  nil)

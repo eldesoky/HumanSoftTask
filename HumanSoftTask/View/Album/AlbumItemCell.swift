@@ -12,4 +12,8 @@ class AlbumItemCell: UICollectionViewCell {
 
     @IBOutlet weak var itemImage: UIImageView!
 
+    func config(_ url:String) {
+        let newUrl = URL(string: url)
+        itemImage.kf.setImage(with: newUrl)
+    }
 }

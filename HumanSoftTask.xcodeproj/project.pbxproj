@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,9 @@
 		BCBCF6332530349800EBB9DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBCF6312530349800EBB9DF /* Main.storyboard */; };
 		BCBCF6352530349900EBB9DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBCF6342530349900EBB9DF /* Assets.xcassets */; };
 		BCBCF6382530349900EBB9DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBCF6362530349900EBB9DF /* LaunchScreen.storyboard */; };
+		BCBCF65025304D5C00EBB9DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF64F25304D5C00EBB9DF /* Constants.swift */; };
+		BCBCF65225304D8900EBB9DF /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF65125304D8900EBB9DF /* ApiRouter.swift */; };
+		BCBCF65625304EBB00EBB9DF /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF65525304EBB00EBB9DF /* ApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		BCBCF6342530349900EBB9DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCBCF6372530349900EBB9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCBCF6392530349900EBB9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCBCF64F25304D5C00EBB9DF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BCBCF65125304D8900EBB9DF /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		BCBCF65525304EBB00EBB9DF /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		D2B0DC37B555D34B1AC56DB5 /* Pods-HumanSoftTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanSoftTask.release.xcconfig"; path = "Target Support Files/Pods-HumanSoftTask/Pods-HumanSoftTask.release.xcconfig"; sourceTree = "<group>"; };
 		FAFA9151A9E68E165EAB65C9 /* Pods_HumanSoftTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanSoftTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -63,6 +69,7 @@
 		BCBCF62A2530349800EBB9DF /* HumanSoftTask */ = {
 			isa = PBXGroup;
 			children = (
+				BCBCF64E25304BB400EBB9DF /* Networking */,
 				BCBCF62B2530349800EBB9DF /* AppDelegate.swift */,
 				BCBCF62D2530349800EBB9DF /* SceneDelegate.swift */,
 				BCBCF62F2530349800EBB9DF /* ViewController.swift */,
@@ -74,13 +81,22 @@
 			path = HumanSoftTask;
 			sourceTree = "<group>";
 		};
+		BCBCF64E25304BB400EBB9DF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BCBCF64F25304D5C00EBB9DF /* Constants.swift */,
+				BCBCF65125304D8900EBB9DF /* ApiRouter.swift */,
+				BCBCF65525304EBB00EBB9DF /* ApiClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		D8EDF0A9522DF4C51C7409C8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				A836ECDAD025ED5DDFB55E8E /* Pods-HumanSoftTask.debug.xcconfig */,
 				D2B0DC37B555D34B1AC56DB5 /* Pods-HumanSoftTask.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,9 +223,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBCF65625304EBB00EBB9DF /* ApiClient.swift in Sources */,
 				BCBCF6302530349800EBB9DF /* ViewController.swift in Sources */,
 				BCBCF62C2530349800EBB9DF /* AppDelegate.swift in Sources */,
+				BCBCF65225304D8900EBB9DF /* ApiRouter.swift in Sources */,
 				BCBCF62E2530349800EBB9DF /* SceneDelegate.swift in Sources */,
+				BCBCF65025304D5C00EBB9DF /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

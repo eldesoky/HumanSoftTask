@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D511709435FF51FE8F88C98 /* Pods_HumanSoftTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAFA9151A9E68E165EAB65C9 /* Pods_HumanSoftTask.framework */; };
 		BCBCF62C2530349800EBB9DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF62B2530349800EBB9DF /* AppDelegate.swift */; };
 		BCBCF62E2530349800EBB9DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF62D2530349800EBB9DF /* SceneDelegate.swift */; };
 		BCBCF6302530349800EBB9DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBCF62F2530349800EBB9DF /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A836ECDAD025ED5DDFB55E8E /* Pods-HumanSoftTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanSoftTask.debug.xcconfig"; path = "Target Support Files/Pods-HumanSoftTask/Pods-HumanSoftTask.debug.xcconfig"; sourceTree = "<group>"; };
 		BCBCF6282530349800EBB9DF /* HumanSoftTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HumanSoftTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBCF62B2530349800EBB9DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCBCF62D2530349800EBB9DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		BCBCF6342530349900EBB9DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCBCF6372530349900EBB9DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCBCF6392530349900EBB9DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2B0DC37B555D34B1AC56DB5 /* Pods-HumanSoftTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HumanSoftTask.release.xcconfig"; path = "Target Support Files/Pods-HumanSoftTask/Pods-HumanSoftTask.release.xcconfig"; sourceTree = "<group>"; };
+		FAFA9151A9E68E165EAB65C9 /* Pods_HumanSoftTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HumanSoftTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D511709435FF51FE8F88C98 /* Pods_HumanSoftTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				BCBCF62A2530349800EBB9DF /* HumanSoftTask */,
 				BCBCF6292530349800EBB9DF /* Products */,
+				D8EDF0A9522DF4C51C7409C8 /* Pods */,
+				F20FF77ECB8E67BF29A4E25C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = HumanSoftTask;
 			sourceTree = "<group>";
 		};
+		D8EDF0A9522DF4C51C7409C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A836ECDAD025ED5DDFB55E8E /* Pods-HumanSoftTask.debug.xcconfig */,
+				D2B0DC37B555D34B1AC56DB5 /* Pods-HumanSoftTask.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F20FF77ECB8E67BF29A4E25C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA9151A9E68E165EAB65C9 /* Pods_HumanSoftTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCBCF63C2530349900EBB9DF /* Build configuration list for PBXNativeTarget "HumanSoftTask" */;
 			buildPhases = (
+				58B830403EC4E664EA40F8E6 /* [CP] Check Pods Manifest.lock */,
 				BCBCF6242530349800EBB9DF /* Sources */,
 				BCBCF6252530349800EBB9DF /* Frameworks */,
 				BCBCF6262530349800EBB9DF /* Resources */,
+				6749864D90CECD4606B45AA3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58B830403EC4E664EA40F8E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HumanSoftTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6749864D90CECD4606B45AA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HumanSoftTask/Pods-HumanSoftTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HumanSoftTask/Pods-HumanSoftTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HumanSoftTask/Pods-HumanSoftTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BCBCF6242530349800EBB9DF /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		BCBCF63D2530349900EBB9DF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A836ECDAD025ED5DDFB55E8E /* Pods-HumanSoftTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		BCBCF63E2530349900EBB9DF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2B0DC37B555D34B1AC56DB5 /* Pods-HumanSoftTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
